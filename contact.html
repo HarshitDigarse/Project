@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Modern Farm 2047</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">🌾</span>
+      <div>
+        <h1>Modern Farm 2047</h1>
+        <p class="subtitle">Get in touch</p>
+      </div>
+    </div>
+
+    <button id="menu-toggle-4" class="menu-toggle" aria-label="Open menu">☰</button>
+
+    <nav id="main-nav-4" class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact container fade-up">
+      <h2>Contact & Project Info</h2>
+      <p class="muted">For demo requests or questions, contact the project leader.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Leader</h4>
+          <p>Mayank</p>
+        </div>
+        <div class="contact-card">
+          <h4>Technician</h4>
+          <p>Harshit</p>
+        </div>
+        <div class="contact-card">
+          <h4>School</h4>
+          <p>[Your School Name]</p>
+        </div>
+      </div>
+
+     <form class="contact-form" action="https://formspree.io/f/movpeyjl" method="POST">
+      <label>
+        Your Name
+        <input type="text" name="name" placeholder="Enter your name" required>
+      </label>
+
+      <label>
+        Your Email
+        <input type="email" name="email" placeholder="Enter your email" required>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="4" placeholder="Type your message..." required></textarea>
+      </label>
+
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+     
+     
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Modern Farm 2047</h4>
+        <p>School Project • Harshit & Team</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Modern Farm 2047</p>
+  </footer>
+
+  <script src="style/script.js"></script>
+</body>
+</html>
