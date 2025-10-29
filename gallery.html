@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Modern Farm 2047</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">🌾</span>
+      <div>
+        <h1>Modern Farm 2047</h1>
+        <p class="subtitle">Project Gallery</p>
+      </div>
+    </div>
+
+    <button id="menu-toggle-3" class="menu-toggle" aria-label="Open menu">☰</button>
+
+    <nav id="main-nav-3" class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery container fade-up">
+      <h2>Project Photos</h2>
+      <p class="muted">Click any image to enlarge.</p>
+
+      <div class="gallery-grid">
+        <button class="media-card" onclick="openLightbox(this)">
+          <img src=" " alt="Farm 1">
+          <span>Model Layout</span>
+        </button>
+
+        <button class="media-card" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1472032250199-5f4a3a6a9f07?w=800&q=60" alt="Farm 2">
+          <span>Solar Panels</span>
+        </button>
+
+        <button class="media-card" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1501004318645-1f6b6d9b0fbb?w=800&q=60" alt="Irrigation">
+          <span>Irrigation Demo</span>
+        </button>
+
+        <button class="media-card" onclick="openLightbox(this)">
+          <img src="st.png" alt="Drone">
+          <span>Drone View</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" alt="Enlarged image">
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Modern Farm 2047</h4>
+        <p>School Project • Harshit & Team</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Modern Farm 2047</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
